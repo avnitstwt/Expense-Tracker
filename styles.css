@@ -7,6 +7,7 @@
 body{
     display: flex;
     height: 100vh;
+    background-color: black;
     /* text-align: center; */
     justify-content: center;
     align-items: center;
@@ -18,7 +19,13 @@ body{
     padding: 5px;
     border-radius: 5px;
 }
+.container>h1{
+    text-align: center;
+    color: white;
+    border-radius:10px;
 
+    background-color: rgba(0, 0, 255, 0.77);
+}
 .hidden{
     display: none;
 }
