@@ -34,6 +34,17 @@ body{
         background-color: aqua;
         display: flex;
         flex-direction: column;
+        /* text-align: center; */
+        justify-content: center ;
+        align-items: center;
+
     }
 
-    
+    #expense-form>*{
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        
+        width: 50%;
+        
+    }
