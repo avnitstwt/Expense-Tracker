@@ -40,6 +40,22 @@ body{
 
     }
 
+    #total{
+        color: white;
+    }
+
+    #total-amount,#dollar{
+        background-color: rgb(16, 16, 16);
+    }
+ul>li{
+    /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 5px;
+        background-color: rgba(0, 0, 0, 0.303);
+        margin: 5px;
+        border-radius: 5px;
+}
     #expense-form>*{
         margin: 5px;
         padding: 5px;
