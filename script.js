@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
             //clearing the input
             expenseNameInput.value = ''
             expenseAmountInput.value = ''
-
+            expenseNameInput.focus()
             
-         }
+        }
     })
     function renderExpenses(){
         expenseList.innerHTML = ''
