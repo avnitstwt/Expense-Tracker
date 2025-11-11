@@ -4,12 +4,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const expenseNameInput= document.getElementById("expense-name")
     const expenseAmountInput= document.getElementById("expense-amount")
     const expenseList= document.getElementById("expense-list")
+    const deleteAll = document.getElementById('deletion')
     const totalAmpoutDisplay= document.getElementById("total-amount")
 
     let expenses = JSON.parse(localStorage.getItem('expenses')) || []
     let totalAmount = calculateTotal()
     renderExpenses()
-
+deleteAll.addEventListener('click',()=>{
+    console.log("hello world");
+    // expenses.forEach((expense)=> {
+    //         const li =  document.createElement('li')
+    //         li.innerHTML = `${expense.name}- $${expense.amount}
+    //         <button data-id="${expense.id}">Delete</button>`
+    //         expenseList.appendChild(li)
+    //     })
+    expenses = []
+    console.log();
+    renderExpenses()
+    totalAmpoutDisplay.textContent = 0
+    
+    
+})
     expenseForm.addEventListener('submit',(e)=>{
         e.preventDefault()
         const name = expenseNameInput.value.trim()
