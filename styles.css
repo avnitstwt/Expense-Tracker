@@ -44,6 +44,7 @@ body{
 
     #total{
         color: white;
+        ;
     }
 
     #total-amount,#dollar{
@@ -53,7 +54,7 @@ ul>li{
     /* background-color: aqua; */
         display: flex;
         justify-content: space-between;
-        padding: 2px 5px;
+        padding: 2px 15px;
         background-color: rgba(0, 0, 0, 0.303);
         margin: 5px;
         border-radius: 5px;
@@ -65,4 +66,8 @@ ul>li{
         
         width: 50%;
         
+    }
+
+    .container>h2{
+        padding: 5px;
     }
